@@ -25,71 +25,137 @@ describes the variables, the data, and any transformations performed to clean up
 - Again, only the mean and standard deviations of these features were extracted for stepFiveTidy.txt
 
 ##### Variables Names and Types
- 1. activity: (factor)  1=walking, 2=walking_upstairs, 3=walking_downstairs, 4=sitting, 5=standing, 6=laying               
- 2. subject: (factor) subject who performed the activity for each window sample. Its range is from 1 to 30.                  
- 3. tBodyAcc_mean_X: (numeric)           
- 4. tBodyAcc_mean_Y: (numeric)           
- 5. tBodyAcc_mean_Z: (numeric)           
- 6. tBodyAcc_std_X: (numeric)            
- 7. tBodyAcc_std_Y: (numeric)            
- 8. tBodyAcc_std_Z: (numeric)            
- 9. tGravityAcc_mean_X: (numeric)        
-10. tGravityAcc_mean_Y: (numeric)        
-11. tGravityAcc_mean_Z: (numeric)        
-12. tGravityAcc_std_X: (numeric)         
-13. tGravityAcc_std_Y: (numeric)         
-14. tGravityAcc_std_Z: (numeric)         
-15. tBodyAccJerk_mean_X: (numeric)       
-16. tBodyAccJerk_mean_Y: (numeric)       
-17. tBodyAccJerk_mean_Z: (numeric)       
-18. tBodyAccJerk_std_X: (numeric)        
-19. tBodyAccJerk_std_Y: (numeric)        
-20. tBodyAccJerk_std_Z: (numeric)        
-21. tBodyGyro_mean_X: (numeric)          
-22. tBodyGyro_mean_Y: (numeric)          
-23. tBodyGyro_mean_Z: (numeric)          
-24. tBodyGyro_std_X: (numeric)           
-25. tBodyGyro_std_Y: (numeric)           
-26. tBodyGyro_std_Z: (numeric)           
-27. tBodyGyroJerk_mean_X: (numeric)      
-28. tBodyGyroJerk_mean_Y: (numeric)      
-29. tBodyGyroJerk_mean_Z: (numeric)      
-30. tBodyGyroJerk_std_X: (numeric)       
-31. tBodyGyroJerk_std_Y: (numeric)       
-32. tBodyGyroJerk_std_Z: (numeric)       
-33. tBodyAccMag_mean: (numeric)          
-34. tBodyAccMag_std: (numeric)           
-35. tGravityAccMag_mean: (numeric)       
-36. tGravityAccMag_std: (numeric)        
-37. tBodyAccJerkMag_mean: (numeric)      
-38. tBodyAccJerkMag_std: (numeric)       
-39. tBodyGyroMag_mean: (numeric)         
-40. tBodyGyroMag_std: (numeric)          
-41. tBodyGyroJerkMag_mean: (numeric)     
-42. tBodyGyroJerkMag_std: (numeric)      
-43. fBodyAcc_mean_X: (numeric)           
-44. fBodyAcc_mean_Y: (numeric)           
-45. fBodyAcc_mean_Z: (numeric)           
-46. fBodyAcc_std_X: (numeric)            
-47. fBodyAcc_std_Y: (numeric)            
-48. fBodyAcc_std_Z: (numeric)            
-49. fBodyAccJerk_mean_X: (numeric)       
-50. fBodyAccJerk_mean_Y: (numeric)       
-51. fBodyAccJerk_mean_Z: (numeric)       
-52. fBodyAccJerk_std_X: (numeric)        
-53. fBodyAccJerk_std_Y: (numeric)        
-54. fBodyAccJerk_std_Z: (numeric)        
-55. fBodyGyro_mean_X: (numeric)          
-56. fBodyGyro_mean_Y: (numeric)          
-57. fBodyGyro_mean_Z: (numeric)          
-58. fBodyGyro_std_X: (numeric)           
-59. fBodyGyro_std_Y: (numeric)           
-60. fBodyGyro_std_Z: (numeric)           
-61. fBodyAccMag_mean: (numeric)          
-62. fBodyAccMag_std: (numeric)           
-63. fBodyBodyAccJerkMag_mean: (numeric)  
-64. fBodyBodyAccJerkMag_std: (numeric)   
-65. fBodyBodyGyroMag_mean: (numeric)     
-66. fBodyBodyGyroMag_std: (numeric)      
-67. fBodyBodyGyroJerkMag_mean: (numeric) 
-68. fBodyBodyGyroJerkMag_std: (numeric)  
+- activity: (factor)  1=walking, 2=walking_upstairs, 3=walking_downstairs, 4=sitting, 5=standing, 6=laying               
+
+- subject: (factor) subject who performed the activity for each window sample. Its range is from 1 to 30.                  
+- tBodyAcc_mean_X: (numeric)           
+
+- tBodyAcc_mean_Y: (numeric)           
+
+- tBodyAcc_mean_Z: (numeric)           
+
+- tBodyAcc_std_X: (numeric)            
+
+- tBodyAcc_std_Y: (numeric)   
+
+- tBodyAcc_std_Z: (numeric)            
+
+- tGravityAcc_mean_X: (numeric)        
+
+- tGravityAcc_mean_Y: (numeric)        
+
+- tGravityAcc_mean_Z: (numeric)        
+
+- tGravityAcc_std_X: (numeric)         
+
+- tGravityAcc_std_Y: (numeric)         
+
+- tGravityAcc_std_Z: (numeric)         
+
+- tBodyAccJerk_mean_X: (numeric)       
+
+- tBodyAccJerk_mean_Y: (numeric)       
+
+- tBodyAccJerk_mean_Z: (numeric)       
+
+- tBodyAccJerk_std_X: (numeric)        
+
+- tBodyAccJerk_std_Y: (numeric)        
+
+- tBodyAccJerk_std_Z: (numeric)        
+
+- tBodyGyro_mean_X: (numeric)          
+
+- tBodyGyro_mean_Y: (numeric)          
+
+- tBodyGyro_mean_Z: (numeric)          
+
+- tBodyGyro_std_X: (numeric)           
+
+- tBodyGyro_std_Y: (numeric)           
+
+- tBodyGyro_std_Z: (numeric)           
+
+- tBodyGyroJerk_mean_X: (numeric)      
+
+- tBodyGyroJerk_mean_Y: (numeric)      
+
+- tBodyGyroJerk_mean_Z: (numeric)      
+
+- tBodyGyroJerk_std_X: (numeric)       
+
+- tBodyGyroJerk_std_Y: (numeric)       
+
+- tBodyGyroJerk_std_Z: (numeric)       
+
+- tBodyAccMag_mean: (numeric)          
+
+- tBodyAccMag_std: (numeric)           
+
+- tGravityAccMag_mean: (numeric)       
+
+- tGravityAccMag_std: (numeric)        
+
+- tBodyAccJerkMag_mean: (numeric)      
+
+- tBodyAccJerkMag_std: (numeric)       
+
+- tBodyGyroMag_mean: (numeric)         
+
+- tBodyGyroMag_std: (numeric)          
+
+- tBodyGyroJerkMag_mean: (numeric)     
+
+- tBodyGyroJerkMag_std: (numeric)      
+
+- fBodyAcc_mean_X: (numeric)           
+
+- fBodyAcc_mean_Y: (numeric)           
+
+- fBodyAcc_mean_Z: (numeric)           
+
+- fBodyAcc_std_X: (numeric)            
+
+- fBodyAcc_std_Y: (numeric)            
+
+- fBodyAcc_std_Z: (numeric)            
+
+- fBodyAccJerk_mean_X: (numeric)       
+
+- fBodyAccJerk_mean_Y: (numeric)       
+
+- fBodyAccJerk_mean_Z: (numeric)       
+
+- fBodyAccJerk_std_X: (numeric)        
+
+- fBodyAccJerk_std_Y: (numeric)        
+
+- fBodyAccJerk_std_Z: (numeric)        
+
+- fBodyGyro_mean_X: (numeric)          
+
+- fBodyGyro_mean_Y: (numeric)          
+
+- fBodyGyro_mean_Z: (numeric)          
+
+- fBodyGyro_std_X: (numeric)           
+
+- fBodyGyro_std_Y: (numeric)           
+
+- fBodyGyro_std_Z: (numeric)           
+
+- fBodyAccMag_mean: (numeric)          
+
+- fBodyAccMag_std: (numeric)           
+
+- fBodyBodyAccJerkMag_mean: (numeric)  
+
+- fBodyBodyAccJerkMag_std: (numeric)   
+
+- fBodyBodyGyroMag_mean: (numeric)     
+
+- fBodyBodyGyroMag_std: (numeric)      
+
+- fBodyBodyGyroJerkMag_mean: (numeric) 
+
+- fBodyBodyGyroJerkMag_std: (numeric)  
